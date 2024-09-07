@@ -11,6 +11,9 @@ public class ceiling_of_number {
     int start=0;
     int end=arr.length-1;
     int mid=start+(end-start)/2;
+    if(target==arr[arr.length-1]){
+        return -1;
+    }
     while(start<=end){
         if(target>arr[mid]){
             start=mid+1;
